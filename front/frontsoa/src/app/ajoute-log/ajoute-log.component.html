@@ -1,0 +1,41 @@
+<div class="container">
+  <h3>Ajouter un Nouveau Logement</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="reference">Reference</label>
+      <input type="text" id="reference" class="form-control" [(ngModel)]="newLogement.reference" name="reference" required>
+    </div>
+
+    <div class="form-group">
+      <label for="adresse">Adresse</label>
+      <input type="text" id="adresse" class="form-control" [(ngModel)]="newLogement.adresse" name="adresse" required>
+    </div>
+
+    <div class="form-group">
+      <label for="delegation">Delegation</label>
+      <input type="text" id="delegation" class="form-control" [(ngModel)]="newLogement.delegation" name="delegation" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gouvernorat">Gouvernorat</label>
+      <input type="text" id="gouvernorat" class="form-control" [(ngModel)]="newLogement.gouvernorat" name="gouvernorat" required>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input type="text" id="type" class="form-control" [(ngModel)]="newLogement.type" name="type" required>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" id="description" class="form-control" [(ngModel)]="newLogement.description" name="description" required>
+    </div>
+
+    <div class="form-group">
+      <label for="prix">Prix</label>
+      <input type="number" id="prix" class="form-control" [(ngModel)]="newLogement.prix" name="prix" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ajouter Logement</button>
+  </form>
+</div>

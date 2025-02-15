@@ -80,4 +80,7 @@ public class Logement {
     public void setPrix(float prix) {
         this.prix = prix;
     }
+
+    public void deleteLogement(int reference) {
+    }
 }

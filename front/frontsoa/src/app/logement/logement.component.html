@@ -1,0 +1,33 @@
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; text-align: left;">
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Adresse</th>
+      <th>Delegation</th>
+      <th>Gouvernorat</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Prix</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let logement of logements">
+      <td>{{ logement.reference }}</td>
+      <td>{{ logement.adresse }}</td>
+      <td>{{ logement.delegation }}</td>
+      <td>{{ logement.gouvernorat }}</td>
+      <td>{{ logement.type }}</td>
+      <td>{{ logement.description }}</td>
+      <td>{{ logement.prix | currency }}</td> <!-- Display price with currency formatting -->
+      <td>
+
+      <button class="btn btn-success">Update</button>
+
+      <!-- Delete button -->
+      <button class="btn btn-danger" (click)="deleteLogement(logement.reference)">Delete</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
